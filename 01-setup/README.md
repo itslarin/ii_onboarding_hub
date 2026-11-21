@@ -14,4 +14,4 @@
 
 Когда все три инструмента установлены, переходите к:
 - выбору роутера и получению токена → `02-credentials/routers.md`
-- настройке OpenCode → `03-config-examples/`
+- настройке OpenCode → `03-opencode-config-examples/`
