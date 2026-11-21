@@ -13,3 +13,30 @@
 .env.local
 *.key
 ```
+## 2. Создайте .env (локально, не коммитится)
+
+```bash
+# .env
+OPENCODE_API_KEY=sk-ваш-токен-здесь
+```
+
+Этот файл остаётся только на вашей машине. В репозиторий его не добавляйте.
+
+## 3. Загружайте переменную перед запуском OpenCode
+OpenCode не читает .env автоматически, поэтому переменную нужно
+экспортировать в текущей сессии терминала.
+
+PowerShell (Windows):
+
+```powershell
+$env:OPENCODE_API_KEY = "sk-ваш-токен-здесь"
+```
+
+bash / zsh / WSL:
+
+```bash
+export OPENCODE_API_KEY="sk-ваш-токен-здесь"
+```
+
+После этого opencode.json с "apiKey": "{env:OPENCODE_API_KEY}"
+подхватит значение.
