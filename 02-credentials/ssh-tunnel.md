@@ -13,5 +13,6 @@ host - ip / hostname сервера
 
 Подобную команду можно упаковать в какой-то запускаемый файл и запускать совместно с opencode.
 
-Для того, чтобы opencode использовал в свой работе поднятый туннель, можно использовать плагин opencode-plugin-socks-relay (самописный). Достаточно разместить его в директории %username%/.config/opencode/plugins.
+Для того, чтобы opencode использовал в свой работе поднятый туннель, можно использовать плагин [opencode-plugin-socks-relay](https://github.com/itslarin/opencode-plugin-socks-relay). Достаточно разместить его в директории %username%/.config/opencode/plugins.
 Для конфигурирования плагина используется файл %username%/.config/opencode/socks-routes.json
+
